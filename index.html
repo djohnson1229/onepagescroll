@@ -1,0 +1,2775 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width">
+
+<style type="text/css">
+
+
+/* 1.1. Base document elements
+==================================== */
+
+* {
+outline: none!important;
+}
+html {
+min-height: 100%;
+overflow-x: hidden;
+}
+body{margin: 0;font-family: 'Raleway', sans-serif; color: #47484A;}
+body.boxed, body.page-template-template-boxedpage-php {
+padding: 20px 0; }
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0
+}
+/*.clearfix {
+display:inline-block
+}*/
+
+.onepcssgrid {
+margin: 0 auto;
+padding: 0;
+max-width: 1200px;
+position: relative
+}
+
+/* 4.3. Device classes
+==================================== */
+
+.onlyDesktop {
+display: block!important;
+}
+.onlyTablets {
+display: none!important;
+}
+.onlySmartphones {
+display: none!important;
+}
+.onlyTabltetsAndSmartphones {
+display: none!important;
+}
+/*
+*
+------------------------------------ */
+
+/* 6.2. Content layout style
+==================================== */ 
+
+/* Columns
+---------------------------------------------------------- */
+.onerow {
+clear: both;
+padding: 0 0px
+}
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+float: left;
+display: inline;
+margin-right: 2.127659574468%;
+}
+.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
+margin: 0
+}
+.col1 {
+width: 6.382978723404%;
+}
+.col2 {
+width: 14.893617021277%;
+}
+.col3 {
+width: 23.4%;
+}
+.col4 {
+width: 31.914893617021%;
+}
+.col5 {
+width: 40.425531914894%;
+}
+.col6 {
+width: 48.936170212766%;
+}
+.col7 {
+width: 57.446808510638%;
+}
+.col8 {
+width: 65.957446808511%;
+}
+.col9 {
+width: 74.468085106383%;
+}
+.col10 {
+width: 82.978723404255%;
+}
+.col11 {
+width: 91.489361702128%;
+}
+.col12 {
+width: 100%;
+margin: 0
+}
+/*.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
+width:100%;
+height:auto;
+display:block
+}*/
+/* =Responsive Images
+-------------------------------------------------------------- */
+img {
+-ms-interpolation-mode: bicubic;
+border: 0;
+height: auto;
+max-width: 100%;
+vertical-align: middle;
+}
+.ie8 img {
+height: auto;
+width: auto\9;
+}
+.ie8 img.size-large {
+max-width: 60%;
+width: auto;
+}
+/* =Responsive Embeds/Objects
+-------------------------------------------------------------- */
+embed, object {
+max-width: 100%;
+}
+svg:not(:root) {
+overflow: hidden;
+}
+/* =Menu
+-------------------------------------------------------------- */
+
+
+/*========================================
+CONTENT START HERE
+==========================================*/
+/* 5.1. Main menu
+==================================== */ 
+.main-menu {
+background: url(../images/nav.jpg) 0 0 repeat-x;
+min-height: 43px;
+}
+nav {
+min-height: 43px;
+font-size: 14px;
+font-family: Tahoma;
+position: relative;
+font-weight: normal;
+font-weight: bold;
+float: left;
+}
+nav ul {
+padding: 0;
+margin: 0 auto;
+}
+nav li {
+display: inline-block;
+position: relative;
+padding: 19px 0;
+}
+
+nav li .submenu {
+background: #333 none repeat scroll 0 0;
+display: none;
+left: 0;
+position: absolute;
+top: 57px;
+width: 200px;
+z-index: 9;
+}
+nav li:hover .submenu{display: block;}
+nav li:hover .submenu li{display: block;}
+
+nav li:last-child {
+margin-right: 0;
+}
+
+nav li:hover{color: #7B9D52;}
+nav li:hover a{color: #4767aa;}
+nav li a.active:after {
+border-style: solid;
+border-width: 10px 9px 0;
+content: "";
+height: 0;
+left: 38%;
+position: absolute;
+top: 100%;
+width: 0;
+}
+nav li:last-child:after {
+background: none
+}
+nav a {
+color: #47484A;
+display: inline-block;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+text-transform: uppercase;
+padding: 10px 10px;
+
+
+}
+li.addright {
+border-right: 1px solid #fff;
+}
+span.nextmenu {
+width: 12px;
+display: block;
+height: 12px;
+background: #000;
+border-radius: 100%;
+float: right;
+margin-left: 8px;
+margin-top: 8px;
+}
+.nextmenu.colorsection2 {
+background: #AB59DE;
+}
+
+.nextmenu.colorsection3 {
+background: #4BBDE3;
+}
+.nextmenu.colorsection4 {
+background: #0BD644;
+}
+.nextmenu.colorsection5 {
+background: #D6E80E;
+}
+
+.nextmenu.colorsection6 {
+background: #E83A09;
+}
+
+
+
+
+
+nav li a {
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+nav li:last-child a {
+border-right: 0;
+}
+nav a:hover, nav a.active {
+}
+nav a#pull {
+display: none;
+}
+
+.logotop{display: inline-block; padding: 10px 0;}
+
+.about .col5 {
+padding: 4px;
+}
+
+.headernav .col4 img:hover,.headernav .col3 img:hover,.headernav .col6 img:hover {
+transform: none;
+}
+
+.section6 .col12 img:hover {
+
+cursor: pointer;
+transform: scale(1.1);
+transition: all 1s ease 0s;
+
+}
+.col4 img:hover,.col3 img:hover,.col6 img:hover {
+cursor: pointer;
+transform: scale(1.1);
+transition: all 1s ease 0s;
+}
+.col4,.col3,.col6,.col12{
+overflow: hidden;
+
+}
+
+
+@media all and (max-width: 800px) {
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
+float: none;
+width: 99%;
+margin-right: 0;
+display: block;
+margin: 0 6px;
+}
+.fake-grid {
+display: none
+}
+body {
+font-size: 14px;
+line-height: 26px
+}
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+padding-top: 0px;
+padding-bottom: 0px
+}
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+float: none!important;
+margin: 0 auto 10px auto!important;
+max-width: 100%;
+width: 100%;
+}
+p {
+font-size: 13px;
+line-height: 20px;
+margin-bottom: 10px;
+color: #777;
+}
+.logo {
+text-align: center
+}
+nav {
+height: auto;
+float: none
+
+}
+nav ul {
+width: 100%;
+display: block;
+height: auto;
+}
+nav li {
+width: 100%;
+float: none;
+position: relative;
+}
+nav li a {
+border-bottom: 1px solid #ccc;
+/*border-right: 1px solid #576979;*/
+
+
+
+margin-right: 56px;
+width: 96%;
+}
+nav li a:hover {
+color: #333;
+}
+nav a {
+text-align: left;
+width: 100%;
+/*	color: #333;*/
+}
+
+}
+
+.backheader{background: url(images/banner.png) 0 0 no-repeat;background-size: cover;padding: 20px 0;}
+
+.backheader h1{font-size: 150px; color: #000;  text-align: center;    font-weight: 800;}
+.logo{margin-top: 20px;}
+.about img{border-radius: 5px;}
+.about h1{font-size: 20px; line-height: 28px; ;font-family: 'Raleway', sans-serif; font-weight: 700; text-align: center;}
+.about p{font-size: 13px; line-height: 20px; ;font-family: 'Raleway', sans-serif; font-weight: 400;}
+
+.themenav li {
+display: inline-block;
+list-style: outside none none;
+padding: 4px 5px; position: relative;
+}
+
+.themenav li ul{position: absolute; display: none;top: 27px; left: 0;position: absolute; padding: 0; background: #eee; width: 170px; z-index:1;}
+.themenav li:hover ul{display: block; }
+.themenav li ul li{padding: 5px 10px; display: block;}
+.themenav{
+text-align: left; padding: 0;   /*margin: 0;*/
+}
+
+.border{/*border-bottom:1px solid #999; */  margin-bottom: 40px;
+padding-bottom: 40px;}
+.roundlogo{  background: #AB59DE none repeat scroll 0 0;
+border-radius: 100%;
+display: inline-block;
+height: 34px;
+vertical-align: middle;
+width: 34px; margin-bottom: 7px;}
+
+.womenslogo {
+color: #47484A;
+font-size: 38px;
+text-decoration: none;
+text-transform: uppercase; font-weight: 700;
+}
+
+.themenav a{color: #47484A; text-decoration: none;}
+.themenav a:hover,.themenav a:focus{color: #4767aa;     border-bottom: 1px solid;}
+
+.onerow.navthem {
+border-bottom: 1px solid #999;
+margin-bottom: 40px;
+padding-bottom: 72px;
+}
+
+.headernav {
+/*background: #88B265 none repeat scroll 0 0; */margin: 0 0 30px;
+}
+.theme1{text-align: center; padding-top: 50px;}
+
+.section2 .col6 {
+margin-bottom: 11px;
+width: 48.9362%;
+}
+.section3 .col6 {
+margin-bottom: 11px;
+width: 48.9362%;
+}
+
+.section4 .col6 {
+margin-bottom: 11px;
+width: 48.9362%;
+}
+.floatright {float:right;}
+
+.theme2 h1,.theme2 p{text-align: center;}
+.theme2 {
+padding-top: 30px;
+}
+.section2 .col6, .section3 .col6, .section4 .col6{position: relative;}
+
+/*   .section2 .col6 .borderright,.section3 .col6 .borderright ,.section4 .col6 .borderright  {
+border: 1px solid #999;
+height: 100%;
+position: absolute;
+right: -12px;}*/
+.section3 {
+padding-top: 50px;
+}
+
+
+.roundlogokids{  background: #0BD644 none repeat scroll 0 0;
+border-radius: 100%;
+display: inline-block;
+height: 34px;
+vertical-align: middle;
+width: 34px; margin-bottom: 7px;}
+.roundlogofootwear{  background: #4BBDE3 none repeat scroll 0 0;
+border-radius: 100%;
+display: inline-block;
+height: 34px;
+vertical-align: middle;
+width: 34px; margin-bottom: 7px;}
+.roundlogokidsfootwear{  background: #0BD644 none repeat scroll 0 0;
+border-radius: 100%;
+display: inline-block;
+height: 34px;
+vertical-align: middle;
+width: 34px; margin-bottom: 7px;}
+.roundlogokidshome{  background: #D6E80E none repeat scroll 0 0;
+border-radius: 100%;
+display: inline-block;
+height: 34px;
+vertical-align: middle;
+width: 34px; margin-bottom: 7px;}
+.roundlogohardline{  background: #E83A09 none repeat scroll 0 0;
+border-radius: 100%;
+display: inline-block;
+height: 34px;
+vertical-align: middle;
+width: 34px; margin-bottom: 7px;}
+
+.roundlogohardlineblack{  background: #000 none repeat scroll 0 0;
+border-radius: 100%;
+display: inline-block;
+height: 34px;
+vertical-align: middle;
+width: 34px; margin-bottom: 7px;}
+
+.roundlogoH{  background: #4767aa none repeat scroll 0 0;
+border-radius: 100%;
+display: inline-block;
+height: 34px;
+vertical-align: middle;
+width: 34px; margin-bottom: 7px;}
+
+
+.section4{
+padding-top: 50px;
+}
+.section5{
+padding-top: 50px;
+}
+.section6{
+padding-top: 50px;
+}
+
+
+.footer {
+background: #333 none repeat scroll 0 0;
+color: #fff;
+margin-top: 60px;
+padding: 30px 0;
+text-align: center;
+}
+.scrollside {
+position: fixed;
+right: 0;
+top: 35%;   z-index: 9;
+}
+
+.scrollside li {
+background: #ccc;
+border-radius: 100%;
+display: block;
+height: 30px;
+margin: 10px;
+width: 30px; cursor: pointer;
+margin: 6px auto;
+}
+
+.scrollside .colorsection2{
+background: #AB59DE;
+}
+.scrollside .colorsection4{
+background: #4BBDE3 ;
+}
+.scrollside .colorsection3{
+background: #0BD644 ;
+}
+.scrollside .colorsection5{
+background: #D6E80E ;
+}
+.scrollside .colorsection6{
+background: #E83A09 ;
+}
+.scrollside .colorsection7{
+background: #000 ;
+}
+.scrollside li.active {
+height: 38px; 
+width: 38px; 
+}
+
+
+.topm{padding-top: 20px;}
+.img240 img,.onerow.img2404 img,.onerow.img2402 img,.onerow.about520 img{width: 240px; height: 240px;}
+.onerow.img240 {
+margin: 0 auto;
+max-width: 776px; text-align: center;
+}
+.onerow.img2404 {
+margin: 0 auto;
+max-width: 1035px; text-align: center;
+}
+.onerow.img2402 {
+margin: 0 auto;
+max-width: 517px; text-align: center;
+}
+.onerow.about520{
+margin: 0 auto;
+max-width: 492px; text-align: center;
+}
+
+.onerow.welcome  {
+margin: 0 auto;
+max-width: 707px; 
+}
+
+.stodio {
+border-left: 1px solid #333;
+float: right;
+margin-left: 0px;
+margin-top: 30px;
+padding: 0 17px;
+text-align: center;
+}
+.abouth{/*display: none;*/ max-width: 491px;}
+.abouth .col12{position: relative;}
+.about520 .abouth{display: block; background: #AB9796; position: absolute; bottom: 60px; z-index: 1;}
+.abouth h1{color: #fff; /*text-transform: uppercase;*/ font-size: 30px;}
+.abouth p{color: #fff; padding: 0 10px; font-size: 17px;}
+
+.onerow.welcome h1{font-size: 50px; text-align: center; color: #47484A; padding-top: 50px;}
+.single520 img{width: 500px !important; height: 500px !important;}
+
+
+.terms .abouth {
+  background: #ab9796 none repeat scroll 0 0;
+    bottom: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 1px 10px 5px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+.termscon{padding: 50px 0 0;}
+@media screen and (max-width: 1200px) {
+
+.onepcssgrid{
+padding: 0 20px;
+}
+}
+@media all and (min-width: 280px) and (max-width: 800px) {
+.section2 .col6 .borderright, .section3 .col6 .borderright, .section4 .col6 .borderright{display: none !important;}
+
+nav a#pull {
+display: block;
+}
+
+/*nav li a {
+color: #000;
+}*/
+
+
+nav a#pull::after {
+background: rgba(0, 0, 0, 0) url("nav-icon.png") no-repeat scroll 0 0;
+content: "";
+display: inline-block;
+height: 30px;
+position: absolute;
+right: 15px;
+top: 10px;
+width: 30px;
+}
+nav a#pull {
+background-color: #4767aa;
+color: #ffffff;
+display: block;
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+padding: 10px 0;
+position: relative;
+text-indent: 15px;
+width: 100%;
+}
+
+nav li a:hover {
+color: #4767aa;
+}
+
+nav ul {
+display: none;
+}
+.backheader h1 {
+
+font-size: 50px;
+
+}
+
+.col6{width: 100% !important;}
+
+.themenav {
+text-align: center;
+}
+
+.themenav li {
+border-bottom: 1px solid #999;
+display: block;
+list-style: outside none none;
+padding: 10px;
+}
+
+.themenav {
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.onerow.about520 {
+max-width: 242px;
+}
+.abouth{
+max-width: 242px;
+width: 100%;}
+
+.navthem .col8,  .navthem .col4{width: 100%;}
+.themenav{padding-top: 30px; padding-bottom: 30px;}
+
+.onerow.welcome h1{font-size: 30px;}
+.single520 img{height: auto !important;}
+nav li{padding: 0;}
+.about520 .abouth{bottom: 32px;}
+
+}
+
+
+ul.newlisting {
+padding: 0 18px;
+}
+
+.newlisting li {
+margin: 10px 0;
+}
+
+/*.heightcheck .col4 img {
+max-height: 190px;
+}*/
+
+/*.imagessame img {
+max-height: 281px;
+}
+.imagessamemdrn img{
+max-height: 281px;
+}
+.imagessamec img{
+max-height: 314px;
+}
+.imagessamev img{
+max-height: 374px;
+}
+.imagessamerus img{
+max-height: 281px;
+}
+.imagessamecn img{
+max-height: 281px;
+}
+.heightcheck1 .col4 img {
+max-height: 225px;
+}*/
+
+/*.col6 img {
+max-height: 190px;
+width: 100%;
+}*/
+
+</style>
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
+
+
+
+</head>
+<body>
+<ul class="scrollside">
+<li class="colorsection2 scrolltodiv" todiv ="section2"></li>
+<li class="colorsection4 scrolltodiv" todiv ="section3"></li>
+<li class="colorsection3 scrolltodiv" todiv ="section4"></li>
+
+<li class="colorsection5 scrolltodiv" todiv ="section5"></li>
+<li class="colorsection6 scrolltodiv" todiv ="section6"></li>
+<li class="colorsection7 scrolltodiv" todiv ="section7"></li>
+</ul>
+
+<div id ="section1" class="section1">
+
+<!--div class="backheader">
+<div class="clearfix onepcssgrid">
+<a href="#" class="logo"><img style="visibility:hidden;" src="logo.png" alt="logo"></a>
+<h1>	Welcome</h1>
+
+</div>
+</div-->
+<div class="clearfix headernav">
+<div class="onepcssgrid">
+<div class="col3"><a href="#" class="logotop"><img src="logo.png" alt="logo" /></a> <span class="stodio"><b>Studio Glossary</b><br/> 2017</span> </div>
+
+<div class="col9 last">
+<nav class="navigation" id="nav">
+
+<ul>
+<li class="addright">   <a class="scrolltodiv" todiv ="section2" href="#">Womens <span class="colorsection2 nextmenu"></span></a>	</li>
+<li class="addright">  <a class="scrolltodiv" todiv ="section3" href="#">Footwear <span class="colorsection3 nextmenu"></a>		</li>
+<li class="addright">  <a class="scrolltodiv" todiv ="section4" href="#">Kids|
+Kids Footwear <span class="colorsection4 nextmenu"></a></li>
+<li class="addright">  <a class="scrolltodiv" todiv ="section5" href="#">Home <span class="colorsection5 nextmenu"></a></li>
+<li>  <a class="scrolltodiv" todiv ="section6" href="#">Hardlines <span class="colorsection6 nextmenu"></a></li>
+<li>  <a class="scrolltodiv" todiv ="section7" href="#">Terms <span class="colorsection7 nextmenu"></a></li>
+
+</ul>
+<a href="#" id="pull">Menu</a> 
+</nav>
+</div>
+</div>
+</div>
+<div class="clearfix border onepcssgrid">
+
+
+
+
+<div class="onerow welcome">
+
+<h1>About This Glossary: </h1>
+
+<p>
+Thank you for visiting the Studio Glossary. This is the place where we can bridge the context gap between Merch and Studio. We hope this feature has beneficial uses for you in your org! </p>
+<!--p>
+<strong>Have any feedback or questions?</strong> <br/><br/>
+
+<strong>Contact: abcdef@gmail.com</strong> <br/>
+</p-->
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+<section id ="section2" class="section2">
+<div class="clearfix womensec onepcssgrid">
+<div class="onerow navthem">
+<div class="col4"> <a href="#" class="womenslogo">Women <span class="roundlogo"></span></a></div>
+<div class="col8 last">
+<ul class="themenav">
+<li>   <a href="#"class="scrolltodiv" todiv ="section2theme1" >Boho</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section2theme2">Modern</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section2theme3">Blogger Style</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section2theme4">Western</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section2theme5">Preppy</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section2theme6">Nautical</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section2theme7">Shabby Chic</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section2theme8">Feminine / Romantic</a></li>
+
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="onerow about520 about">
+
+<div class="div520">
+<div class="onerow">
+<div class="abouth">
+<h1>About</h1>
+
+<p>There are several categories that are frequently requested within the Women’s department:</p>
+</div>
+<div class="col6"> <img src="images/women1.jpg" alt="women1"></div>
+<div class="col6 last"> <img src="images/women2.jpg" alt="women2"></div>
+</div>
+<div class="onerow">
+<div class="col6"> <img src="images/women3.jpg" alt="women3"></div>
+<div class="col6 last"> <img src="images/women4.jpg" alt="women4"></div>
+</div>   </div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="clearfix theme1 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section2theme1">Boho</h1>
+<p>Boho Definition: Style drawing from bohemian and hippie influences with a gypsy, folky element. Accessories might include: over-accessorizing with bangles, scarves, layered long necklaces, hats, rings, long vests. Possible HMU: braids, tousled waves, smoky eye, highlighter.
+
+<u>Brand Reference: Free People, Anthropologie</u></p>
+
+
+<div class="col4">
+
+<img src="images/boho1.jpg" alt="boho1">
+</div>
+<div class="col4">
+
+<img src="images/boho2.jpg" alt="boho2">
+</div>
+
+
+<div class="col4 last">
+
+<img src="images/boho3.jpg" alt="boho3">
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid">
+
+<div class="onerow img240">
+<h1 id="section2theme2">Modern</h1><p>Clean lines, minimalistic, neutral colors, less is more. </u></br></br></p>
+
+
+
+<div class="col4">
+
+<img src="images/womenmodern1.jpg" alt="womenmodern1">
+</div>
+<div class="col4">
+
+<img src="images/womenmodern2.jpg" alt="womenmodern2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/womenmodern3.jpg" alt="womenmodern3">
+</div>
+
+</div>
+
+</div>
+<div class="clearfix theme2 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section2theme3">Blogger Style</h1> <p>
+Blogger Style Definition: Street style, trendy, girl on the go, playfully accessorized (including hats, sunnies, etc.), with a coffee or cell phone in hand. Possible HMU: tousled waves, subtle contouring and highlighting, trendy makeup. </br>
+<u>Brand Reference: fast fashion including F21, Zara, Asos, Nasty Gal. Target, etc. </u>
+</p>
+
+
+
+<div class="col4">
+
+<img src="images/bloggerstyle1.jpg" alt="bloggerstyle1">
+</div>
+<div class="col4">
+
+<img src="images/bloggerstyle2.jpg" alt="bloggerstyle2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/bloggerstyle3.jpg" alt="bloggerstyle3">
+</div>	
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<div class="clearfix theme1 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section2theme4">Western</h1>
+<p>Western Definition: Cowboy-inspired, classic styles, Canadian tuxedo. Accessories and elements may include paisley, scarf neck-tie, cowboy hat, leather boots, tassels. Possible HMU: clean face, hair with volume and curls. 
+<br/><u>Brand Reference: Wrangler, Sundance, Ralph Lauren</u>
+</p>
+
+<div class="col4">
+
+<img src="images/western1.jpg" alt="western1">
+</div>
+<div class="col4">
+
+<img src="images/western2.jpg" alt="western2">
+</div>
+
+
+<div class="col4 last">
+
+<img src="images/western3.jpg" alt="western3">
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid">
+
+<div class="onerow img240">
+<h1 id="section2theme5">Nautical</h1>
+<p>
+Nautical Definition: Vertical blue and white stripes with red accents with a preppy, All American feel; may include khaki, cardigans, denim, flats, boat shoes, hats, double breasted peacoat. Possible HMU: Red lip, cat eye, flawless skin. </br>
+<u>Brand Reference: Nautica, J. Crew, Sperry, Ralph Lauren</u></p>
+
+
+<div class="col4">
+
+<img src="images/nautical1.jpg" alt="nautical1">
+</div>
+<div class="col4">
+
+<img src="images/nautical2.jpg" alt="nautical2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/nautical3.jpg" alt="nautical3">
+</div>
+
+</div>
+
+</div>
+<div class="clearfix theme2 onepcssgrid">
+<div class="onerow img240">
+<h1 class="topm" id="section2theme6">Preppy</h1><p>
+Preppy Definition: Tailored, polished, tucked in, high-waisted skirts and trousers, chinos, pleated skirts, sweaters layered over collared shirts, refined jewelry, penny loafers and boat shoes, with a nod towards the uniform and equestrian. Possible HMU: glowing skin, headbands, ponytails, side part.  <br/>
+<u>Brand Reference Kate Spade, J. Crew, Tommy Hilfiger, Ted Baker </u></p>
+
+
+<div class="col4">
+
+<img src="images/preppy1.jpg" alt="preppy1">
+</div>
+
+<div class="col4">
+
+<img src="images/preppy2.jpg" alt="preppy2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/preppy3.jpg" alt="preppy3">
+</div>
+
+</div>
+
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid">
+
+<div class="onerow img240">
+<h1 id="section2theme7">Shabby Chic</h1><p>
+Shabby Chic Definition: Vintage, feminine, neutrals and pastels, English rose garden, lace, often loose fitting on the body. Weathered, white washed wood, white brick. Possible HMU: Soft curls, messy side bun.
+
+</br>
+<u>Brand Reference Anthropologie, Pretty Angel </u></p>
+
+<div class="col4">
+
+<img src="images/shabby-chic1.jpg" alt="shabby-chic1">
+</div>
+<div class="col4">
+
+<img src="images/shabby-chic2.jpg" alt="shabby-chic2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/shabby-chic3.jpg" alt="shabby-chic3">
+</div>
+
+
+</div>
+</div>
+
+<div class="clearfix theme2 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section2theme8">Feminine / Romantic</h1><p>
+Feminine / Romantic Definition: Softer, pinks, white, laces, chiffon, delicate details, flowy. Possible HMU: Wavy and curly hair, loose braids, flushed cheeks, stained lips. 
+<br/>
+<u>Brand Reference: For Love and Lemons, Lauren Conrad, Blush, Ralph Lauren</u></p>
+
+<div class="col4">
+
+<img src="images/feminine-romantic1.jpg" alt="feminine-romantic1">
+</div>
+
+<div class="col4">
+
+<img src="images/feminine-romantic2.jpg" alt="feminine-romantic2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/feminine-romantic3.jpg" alt="feminine-romantic3">
+</div>
+
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<section id ="section3" class="section3">
+<div class="clearfix womensec onepcssgrid">
+<div class="onerow navthem">
+<div class="col3"> <a href="#" class="womenslogo">Footwear <span class="roundlogofootwear"></span></a></div>
+<div class="col9 last">
+<ul class="themenav">
+<li>   <a href="#" class="scrolltodiv" todiv ="section3theme1" >Modern</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme2">Blogger Style</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme3">Luxe</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme4">Comfort</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme5">Western</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme6">Athletic Sneakers</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme7">Fashion Sneakers</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme8">Outdoor / Rugged</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme9">Vintage / Shabby Chic</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section3theme10">Men’s</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="onerow about520 about">
+<div class="col12">
+<div class="onerow">
+<div class="abouth">
+<h1>About</h1>
+
+<p>There are several categories that are frequently requested within the Women’s department:</p>
+</div>
+<div class="col6"> <img src="images/footwear-western1.jpg" alt="footwear13"></div>
+<div class="col6 last"> <img src="images/footwear-comfort2.jpg" alt="footwear11"></div>
+</div>
+<div class="onerow">
+<div class="col6"> <img src="images/footwear-Luxe1.jpg" alt="footwear7"></div>
+<div class="col6 last"> <img src="images/footwear20.jpg" alt="footwear20"></div>
+</div>   </div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme1 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section3theme1">Modern</h1>
+<p>Clean lines, minimalistic, neutral colors, less is more. </p>
+
+<div class="col4">
+
+<img src="images/footwear-modern1.jpg" alt="footwear-modern1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-modern2.jpg" alt="footwear-modern2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-modern3.jpg" alt="footwear-modern3">
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid">
+
+
+<div class="onerow img240">
+
+<h1 id="section3theme2">Blogger Style / Trendy</h1>
+<p>Contemporary, street style, trendy, current, urban, girl on the go.</p>
+
+
+<div class="col4">
+
+<img src="images/footwear-blogger-style-trendy1.jpg" alt="footwear-blogger-style-trendy1">
+</div>
+
+<div class="col4">
+
+<img src="images/footwear-blogger-style-trendy1.jpg" alt="footwear-blogger-style-trendy2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-blogger-style-trendy1.jpg" alt="footwear-blogger-style-trendy3">
+</div>
+
+
+</div>
+</div>
+
+
+<div class="clearfix theme2 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section3theme3">Luxe</h1>
+<p>Decorative, dramatic, expensive looking, luxurious, embellished, plush, applique, fancy, sophisticated.</p>
+
+<div class="col4">
+
+<img src="images/footwear-Luxe1.jpg" alt="footwear-Luxe1">
+</div>
+
+<div class="col4">
+
+<img src="images/footwear-Luxe2.jpg" alt="footwear-Luxe2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-Luxe3.jpg" alt="footwear-Luxe3">
+</div>
+</div>
+</div>
+
+<div class="clearfix theme1 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section3theme4">Comfort</h1> 
+<p>Easy wear, modest, casual, minimalist, practical, understated, relaxed, sensible.</p>
+<div class="col4">
+
+<img src="images/footwear-comfort1.jpg" alt="footwear-comfort1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-comfort2.jpg" alt="footwear-comfort2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-comfort3.jpg" alt="footwear-comfort3">
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid">
+<div class="onerow img240">
+
+
+<h1 id="section3theme5">Western</h1>
+<p>Country, wearable western, modern or urban, southwest, cowboy (sometimes), denim, romantic (sometimes), detailed, embroidered.</p>
+
+<div class="col4">
+
+<img src="images/footwear-western1.jpg" alt="footwear-western1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-western2.jpg" alt="footwear-western2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-western3.jpg" alt="footwear-western3">
+
+</div>
+
+
+</div>
+</div>
+
+
+<div class="clearfix theme2 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section3theme6">Athletic Sneakers</h1>
+<p>Comfortable, casual, running shoes, athleisure, lightweight, reliable, supportive.</p>
+
+<div class="col4">
+
+<img src="images/footwear-athletic-sneakers1.jpg" alt="footwear-athletic-sneakers1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-athletic-sneakers2.jpg" alt="footwear-athletic-sneakers2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-athletic-sneakers3.jpg" alt="footwear-athletic-sneakers3">
+</div>
+</div>
+
+</div>
+
+<div class="clearfix theme1 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section3theme7">Fashion Sneakers</h1>
+<p>Trendy, casual, playful, current, detailed, fashionable, contemporary, designer (sometimes).</p>
+
+<div class="col4">
+
+<img src="images/footwear-fashion-sneakers1.jpg" alt="footwear-fashion-sneakers1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-fashion-sneakers2.jpg" alt="footwear-fashion-sneakers2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-fashion-sneakers3.jpg" alt="footwear-fashion-sneakers3">
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid">
+
+<div class="onerow img240">
+<h1 id="section3theme8">Outdoor / Rugged</h1>
+<p>Functional, well made, waterproof (sometimes), leather, worn, weathered, cozy (UGGS, for example), distressed.</p>
+
+<div class="col4">
+
+<img src="images/footwear-outdoor-rugged1.jpg" alt="footwear-outdoor-rugged1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-outdoor-rugged2.jpg" alt="footwear-outdoor-rugged2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-outdoor-rugged3.jpg" alt="footwear-outdoor-rugged3">
+</div>
+</div>
+
+
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid">
+
+<div class="onerow img240">
+<h1 id="section3theme9">Vintage / Shabby Chic</h1>
+<p>Pastel color palette, French inspired, ornate lines, florals.</p>
+<div class="col4">
+
+<img src="images/footwear-vintage-shabby-chic1.jpg" alt="footwear-vintage-shabby-chic1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-vintage-shabby-chic2.jpg" alt="footwear-vintage-shabby-chic2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-vintage-shabby-chic3.jpg" alt="footwear-vintage-shabby-chic3">
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+<div class="clearfix theme1 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section3theme10">Men’s: Dress Shoes</h1>
+<p>Dapper, elegant, leather, timeless, detailed, quality, well-made, comfort.</p>
+
+<div class="col4">
+
+<img src="images/footwear-mens-dress-shoes1.jpg" alt="footwear-mens-dress-shoes1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-mens-dress-shoes2.jpg" alt="footwear-mens-dress-shoes2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-mens-dress-shoes3.jpg" alt="footwear-mens-dress-shoes3">
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="clearfix theme1 onepcssgrid">
+<div class="onerow img240">
+<h1 id="section3theme10">Men’s: Casual Shoes</h1>
+<p>Dapper, elegant, leather, timeless, detailed, quality, well-made, comfort.</p>
+
+<div class="col4">
+
+<img src="images/footwear-mens-casual-shoes1.jpg" alt="footwear-mens-casual-shoes1">
+</div>
+<div class="col4">
+
+<img src="images/footwear-mens-casual-shoes2.jpg" alt="footwear-mens-casual-shoes2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/footwear-mens-casual-shoes3.jpg" alt="footwear-mens-casual-shoes3">
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="section4" class="section4">
+<div class="clearfix womensec onepcssgrid">
+<div class="onerow navthem">
+<div class="col4"> <a href="#" class="womenslogo">KIDS | FOOTWEAR <span class="roundlogokidsfootwear"></span></a></div>
+<div class="col8 last">
+<ul class="themenav">
+<li>   <a href="#"class="scrolltodiv" todiv ="section4theme1" >Preppy</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme2">Trendy</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme3">Boho</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme4">Cool Kid</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme5">Traditional</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme6">Vintage</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme7">Nautical</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme8">Surfer</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme9">Playful</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section4theme10">Whimsical</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="onerow about520 about">
+<div class="col12">
+<div class="onerow">
+<div class="abouth">
+<h1>About</h1>
+
+<p>There are several categories that are frequently requested within the Women’s department:</p>
+</div>
+<div class="col6"> <img src="images/kids-footwear1.jpg" alt="kids-footwear1"></div>
+<div class="col6 last"> <img src="images/kids-footwear2.jpg" alt="kids-footwear2"></div>
+</div>
+<div class="onerow">
+<div class="col6"> <img src="images/kids-footwear3.jpg" alt="kids-footwear3"></div>
+<div class="col6 last"> <img src="images/kids-footwear4.jpg" alt="kids-footwear4"></div>
+</div>   </div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme1 onepcssgrid newheightcheck">
+<div class="onerow img2404">
+<h1 id="section4theme1">Preppy</h1>
+<p>Stylish, classic</p>
+
+<div class="col3">
+
+<img src="images/kids-footwear1.jpg" alt="kids-footwear1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear2.jpg" alt="kids-footwear2">
+</div>
+<div class="col3">
+
+<img src="images/footwear-preppy1.jpg" alt="footwear-preppy3">
+</div>
+<div class="col3 last">
+
+<img src="images/footwear-preppy2.jpg" alt="footwear-preppy4">
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+
+<div class="onerow img2404">
+<h1 id="section4theme2">Trendy</h1>
+<p>Aspirational, fun, fashionable</p>
+
+<div class="col3">
+
+<img src="images/kids-footwear-trendy1.jpg" alt="kids-footwear-trendy1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-trendy2.jpg" alt="kids-footwear-trendy2">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-trendy3.jpg" alt="kids-footwear-trendy3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-footwear-trendy4.jpg" alt="kids-footwear-trendy4">
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img2404">
+<h1 id="section4theme3">Boho</h1>
+<p>Modern, trendy, hippy chic</p>
+
+<div class="col3">
+
+<img src="images/kids-footwear-boho1.jpg" alt="kids-footwear-boho1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-boho2.jpg" alt="kids-footwear-boho2">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-boho3.jpg" alt="kids-footwear-boho3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-footwear-boho4.jpg" alt="kids-footwear-boho4">
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+<div class="clearfix theme1 onepcssgrid newheightcheck">
+<div class="onerow img2404">
+<h1 id="section4theme4">Cool Kid</h1>
+<p>Urban, attitude, fashion</p>
+
+<div class="col3">
+
+<img src="images/kids-cool-kid1.jpg" alt="kids-cool-kid1">
+</div>
+<div class="col3">
+
+<img src="images/kids-cool-kid2.jpg" alt="kids-cool-kid2">
+</div>
+<div class="col3">
+
+<img src="images/kids-cool-kid3.jpg" alt="kids-cool-kid3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-cool-kid4.jpg" alt="kids-cool-kid4">
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+
+
+<div class="onerow img2404">
+<h1 id="section4theme5">Traditional</h1>
+<p>Conservative, Classic</p>
+
+<div class="col3">
+
+<img src="images/kids-footwear-traditional1.jpg" alt="kids-footwear-traditional1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-traditional2.jpg" alt="kids-footwear-traditional2">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-traditional3.jpg" alt="kids-footwear-traditional3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-footwear-traditional4.jpg" alt="kids-footwear-traditional4">
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+
+<div class="onerow img2404">
+<h1 id="section4theme6">Vintage</h1>
+<p>Pastel color palette, French inspired, ornate lines, florals. </p>
+
+<div class="col3">
+
+<img src="images/kids-footwear-vintage1.jpg" alt="kids-footwear-vintage1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-vintage2.jpg" alt="kids-footwear-vintage2">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-vintage3.jpg" alt="kids-footwear-vintage3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-footwear-vintage4.jpg" alt="kids-footwear-vintage4">
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck1">
+
+
+<div class="onerow img2404">
+<h1 id="section4theme7">Nautical</h1>
+<p>Summer east coast, preppy beach, traditional, backyard </p>
+
+<div class="col3">
+
+<img src="images/kids-footwear-nautical1.jpg" alt="kids-footwear-nautical1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-nautical2.jpg" alt="kids-footwear-nautical2">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-nautical3.png" alt="kids-footwear-nautical3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-footwear-nautical4.jpg" alt="kids-footwear-nautical4">
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck1">
+<div class="onerow img2404">
+<h1 id="section4theme8">Surfer</h1>
+<p>Summer west coast, casual L.A. trendy, tropical </p>
+
+<div class="col3">
+
+<img src="images/kids-footwear-surfer1.jpg" alt="kids-footwear-surfer1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-surfer2.jpg" alt="kids-footwear-surfer2">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-surfer3.jpg" alt="kids-footwear-surfer3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-footwear-surfer4.jpg" alt="kids-footwear-surfer4">
+</div>
+
+
+
+</div>
+
+</div>
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck1">
+
+<div class="onerow img2404">
+<h1 id="section4theme9">Playful</h1>
+<p>- Fun, active, emotion </p>
+
+<div class="col3">
+
+<img src="images/kids-footwear-playful1.jpg" alt="kids-footwear-playful1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-playful2.jpg" alt="kids-footwear-playful2">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-playful3.jpg" alt="kids-footwear-playful3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-footwear-playful4.jpg" alt="kids-footwear-playful4">
+</div>
+
+
+
+</div>
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck1">
+<div class="onerow img2404">
+<h1 id="section4theme10">Whimsical</h1>
+<p>Fantasy, imagination, surreal </p>
+
+<div class="col3">
+
+<img src="images/kids-footwear-whimsical1.jpg" alt="kids-footwear-whimsical1">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-whimsical2.jpg" alt="kids-footwear-whimsical2">
+</div>
+<div class="col3">
+
+<img src="images/kids-footwear-whimsical3.jpg" alt="kids-footwear-whimsical3">
+</div>
+<div class="col3 last">
+
+<img src="images/kids-footwear-whimsical4.jpg" alt="kids-footwear-whimsical4">
+</div>
+
+
+
+</div>
+
+</div>
+
+
+</section>
+<section id="section5" class="section5">
+<div class="clearfix womensec onepcssgrid">
+<div class="onerow navthem">
+<div class="col4"> <a href="#" class="womenslogo">HOME <span class="roundlogokidshome"></span></a></div>
+<div class="col8 last">
+<ul class="themenav">
+<li>   <a href="#"class="scrolltodiv" todiv ="section5theme1" >Cabin</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section5theme2">Coastal/Nautical</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section5theme3">Farm House</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section5theme4">Industrial</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section5theme5">Modern</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section5theme6">Rutisc</a></li>
+<!--li>  <a href="#" class="scrolltodiv" todiv ="section5theme7">Shabby Chic</a></li-->
+<li>  <a href="#" class="scrolltodiv" todiv ="section5theme8">Vintage</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section5theme9">Bohemian/Global</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section5theme10"> Nautical </a></li>	
+
+<li>   <a href="#"class="scrolltodiv" todiv ="section6theme1" >Beauty</a>
+<ul>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme1">Clean </a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme2">Graphic  </a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme3">Lifestyle </a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme4">Natural |Organic 
+</a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme5"> Textured </a></li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="onerow about520 about">
+<div class="col12">
+<div class="onerow">
+<div class="abouth">
+<h1>About</h1>
+
+<p>There are several categories that are frequently requested within the Women’s department:</p>
+</div>
+<div class="col6"> <img src="images/home1.jpg" alt="home1"></div>
+<div class="col6 last"> <img src="images/home2.jpg" alt="home2"></div>
+</div>
+<div class="onerow">
+<div class="col6"> <img src="images/home3.jpg" alt="home3"></div>
+<div class="col6 last"> <img src="images/home4.jpg" alt="home4"></div>
+</div>   </div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme1 onepcssgrid newheightcheck">
+<div class="onerow img240">
+<h1 id="section5theme1">Cabin</h1>
+<p>Warm and cozy, leather, plaid, faux fur, classic. </p>
+
+
+<div class="col4">
+
+<img src="images/home1.jpg" alt="home1">
+</div>
+<div class="col4">
+
+<img src="images/home2.jpg" alt="home2">
+</div>
+
+
+<div class="col4 last">
+
+<img src="images/home3.jpg" alt="home3">
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+
+
+<div class="onerow img240">
+
+<h1 id="section5theme2">Coastal/Nautical</h1><p>Beachy yet classic, blues and browns, natural textiles.</p>
+
+
+
+<div class="col4">
+
+<img src="images/home4.jpg" alt="home4">
+</div>
+<div class="col4">
+
+<img src="images/home-coastal-nautical1.jpg" alt="home-coastal-nautical1">
+</div>
+<div class="col4 last">
+
+<img src="images/home-coastal-nautical2.jpg" alt="home-coastal-nautical2">
+</div>
+
+</div>
+
+
+</div>
+<div class="clearfix theme2 onepcssgrid heightcheck">
+
+<div class="onerow img2402">
+<h1 id="section5theme3">Farm House</h1><p>Shiplap, chipped paint, neutral colors, old meets new.
+</p>
+
+<div class="col6">
+
+<img src="images/home-farm-house1.jpg" alt="home-farm-house1">
+</div>
+
+<div class="col6 last">
+
+<img src="images/home-farm-house2.jpg" alt="home-farm-house2">
+</div></div>
+
+
+
+
+</div>
+
+
+
+
+<div class="clearfix theme1 onepcssgrid newheightcheck">
+<div class="onerow img240">
+<h1 id="section5theme4">Industrial</h1>
+<p>Repurposed, heavier lines, mix of wood, brick, concrete.</p>
+
+
+<div class="col4">
+
+<img src="images/home-industrial1.jpg" alt="home-industrial1">
+</div>
+
+<div class="col4">
+
+<img src="images/home-industrial2.jpg" alt="home-industrial2">
+</div>
+<div class="col4 last">
+
+<img src="images/home-industrial3.jpg" alt="home-industrial3">
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+
+<div class="onerow img240">
+<h1 id="section5theme5">Modern</h1><p>Clean lines, minimalistic, neutral colors, less is more. </p>
+
+
+
+<div class="col4">
+
+<img src="images/Modern-3.jpg" alt="home-modern1">
+</div>
+<div class="col4">
+
+<img src="images/Modern-1.jpg" alt="home-modern2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/Modern-2.jpg" alt="home-modern3">
+</div>
+</div>
+
+</div>
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+<h1 id="section5theme6">Rutisc</h1><p>Natural textures, earthy colors, wooden elements, casual.</p>
+
+
+<div class="col4">
+
+<img src="images/Rustic-1.jpg" alt="home-rutisc1">
+</div>
+<div class="col4">
+
+<img src="images/Rustic-2.jpg" alt="home-rutisc2">
+</div>
+
+<div class="col4 last ">
+
+<img src="images/Rustic-3.jpg" alt="home-rutisc3">
+</div>
+</div>
+
+
+
+</div>
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck1">
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck1">
+<div class="onerow img240">
+<h1 id="section5theme8">Vintage</h1><p>
+Pastel color palette, French inspired, ornate lines, florals. </p>
+
+
+<div class="col4">
+
+<img src="images/Vintage-1.jpg" alt="home-vintage1">
+</div>
+<div class="col4">
+
+<img src="images/Vintage-2.jpg" alt="home-vintage2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/Vintage-3.jpg" alt="home-vintage3">
+</div>
+</div>
+
+
+
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck1">
+<div class="onerow img240">
+<h1 id="section5theme9">Bohemian/Global</h1><p>
+These are more worldly prints, brighter colors, vibrant patterns, with lots of shapes and funky eclectic prints. </p>
+
+
+<div class="col4">
+
+<img src="images/Global-1.jpg" alt="home-Global1">
+</div>
+<div class="col4">
+
+<img src="images/Global-2.jpg" alt="home-Global2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/Global-3.jpg" alt="home-Global3">
+</div>
+</div>
+
+
+
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck1">
+<div class="onerow img240">
+<h1 id="section5theme10">Nautical </h1><p>
+This theme incorporates the use of red, white and blue with a nod to the oceanside. This theme also incorporates concepts from the Americana style .</p>
+
+<div class="col3">
+
+<img src="images/Nautical1.jpg" alt="home-Nautical1">
+</div>
+<div class="col3">
+
+<img src="images/Nautical2.jpg" alt="home-Nautical2">
+</div>
+
+<div class="col3">
+
+<img src="images/Nautical3.jpg" alt="home-Nautical3">
+</div>
+<div class="col3 last">
+
+<img src="images/Nautical3.jpg" alt="home-Nautical3">
+</div>
+</div>
+
+
+
+
+</div>
+
+
+<div class="clearfix theme1 onepcssgrid newheightcheck">
+<div class="onerow img2404">
+<h1 id="section6theme1">Beauty (Clean)</h1>
+<p>CLEAN</p>
+
+
+<div class="col3">
+
+<img src="images/hardlines-beauty-clean1.jpg" alt="hardlines-beauty-clean1">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-beauty-clean2.jpg" alt="hardlines-beauty-clean2">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-beauty-clean3.jpg" alt="hardlines-beauty-clean3">
+</div>
+
+<div class="col3 last">
+
+<img src="images/hardlines-beauty-clean4.jpg" alt="hardlines-beauty-clean4">
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+
+<h1 id="section6theme2">Beauty (Graphic)</h1>
+<div class="col4">
+
+<img src="images/hardlines-beauty-graphic1.jpg" alt="hardlines-beauty-graphic1">
+</div>
+<div class="col4">
+
+<img src="images/hardlines-beauty-graphic2.jpg" alt="hardlines-beauty-graphic2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/hardlines-beauty-graphic3.jpg" alt="hardlines-beauty-graphic3">
+</div>
+
+</div>
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+
+<h1 id="section6theme3">Beauty (Lifestyle)</h1>
+
+<div class="col12">
+
+<img src="images/hardlines-beauty-lifestyle1.jpg" alt="hardlines-beauty-lifestyle1">
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img2404">
+
+<h1 id="section6theme4">Beauty (Natural | Organic)
+</h1>
+<div class="col3">
+
+<img src="images/hardlines-Beauty-natural-organic1.jpg" alt="hardlines-Beauty-natural-organic1">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-Beauty-natural-organic2.jpg" alt="hardlines-Beauty-natural-organic2">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-Beauty-natural-organic3.jpg" alt="hardlines-Beauty-natural-organic3">
+</div>
+<div class="col3 last">
+
+<img src="images/hardlines-Beauty-natural-organic4.jpg" alt="hardlines-Beauty-natural-organic4">
+</div>
+
+</div>
+</div>
+
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+
+<h1 id="section6theme5">Beauty (Textured)</h1>
+<div class="col4">
+
+<img src="images/hardlines-beauty-textured1.jpg" alt="hardlines-beauty-textured1">
+</div>
+<div class="col4">
+
+<img src="images/hardlines-beauty-textured2.jpg" alt="hardlines-beauty-textured2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/hardlines-beauty-textured3.jpg" alt="hardlines-beauty-textured3">
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section id="section6" class="section6">
+<div class="clearfix womensec onepcssgrid">
+<div class="onerow navthem">
+<div class="col4"> <a href="#" class="womenslogo">Hardlines <span class="roundlogohardline"></span></a></div>
+<div class="col8 last">
+<ul class="themenav">
+
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme6">Books</a>
+
+<ul>
+
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme6">Graphic  </a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme7">Lifestyle </a></li>
+
+</ul>
+
+</li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme8">Diy</a>
+
+<ul>
+
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme8">Graphic  </a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme9">Lifestyle </a></li>
+
+</ul>
+
+
+</li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme10">Personalization</a>
+<ul>
+
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme10">Graphic  </a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme11">Lifestyle </a></li>
+
+</ul>
+
+</li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme12">Toys</a>
+
+<ul>
+
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme12">Graphic  </a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme13">Lifestyle </a></li>
+
+</ul>
+
+
+</li>
+
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme14">Licensing</a>
+
+<ul>
+
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme14">Graphic  </a></li>
+<li>  <a href="#" class="scrolltodiv" todiv ="section6theme15">Lifestyle </a></li>
+
+</ul>
+
+
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="onerow about520 about">
+<div class="col12">
+<div class="onerow">
+<div class="abouth">
+<h1>About</h1>
+
+<p>There are several categories that are frequently requested within the Women’s department:</p>
+</div>
+<div class="col12">
+<div class="onerow">
+<div class="abouth">
+<h1>About</h1>
+
+<p>There are several categories that are frequently requested within the Women’s department:</p>
+</div>
+<div class="col6"> <img src="images/hardlineabout1.jpg" alt="footwear13"></div>
+<div class="col6 last"> <img src="images/hardlineabout2.jpg" alt="footwear11"></div>
+</div>
+<div class="onerow">
+<div class="col6"> <img src="images/hardlineabout3.jpg" alt="footwear7"></div>
+<div class="col6 last"> <img src="images/hardlineabout4.jpg" alt="footwear20"></div>
+</div>   </div>
+
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+
+<h1 id="section6theme6">Books (Graphic)</h1>
+<div class="col4">
+
+<img src="images/hardlines-books-graphic1.png" alt="hardlines-books-graphic1">
+</div>
+<div class="col4">
+
+<img src="images/hardlines-books-graphic2.jpg" alt="hardlines-books-graphic2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/hardlines-books-graphic3.jpg" alt="hardlines-books-graphic3">
+</div>
+
+</div>
+</div>
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+
+<h1 id="section6theme7">Books (Lifestyle)</h1>
+<div class="col4">
+
+<img src="images/hardlines-books-lifestyle1.jpg" alt="hardlines-books-lifestyle1">
+</div>
+<div class="col4">
+
+<img src="images/hardlines-books-lifestyle2.jpg" alt="hardlines-books-lifestyle2">
+</div>
+<div class="col4 last">
+
+<img src="images/hardlines-books-lifestyle3.jpg" alt="hardlines-books-lifestyle3">
+</div><div class="clearfix theme2 onepcssgrid heightcheck">
+    <div class="col4"><br></div>
+</div>
+
+
+
+
+<div class="col4">
+
+<img src="images/hardlines-books-lifestyle4.jpg" alt="hardlines-books-lifestyle4">
+</div>
+
+<div class="col4">
+
+<img src="images/hardlines-books-lifestyle5.jpg" alt="hardlines-books-lifestyle3">
+</div>
+<div class="col4 last">
+
+<img src="images/hardlines-books-lifestyle6.jpg" alt="hardlines-books-lifestyle4">
+</div>
+
+</div>
+</div>
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+
+<h1 id="section6theme8">Diy (Graphic)</h1>
+<div class="col4">
+
+<img src="images/hardlines-diy-graphic1.jpg" alt="hardlines-diy-graphic1">
+</div>
+<div class="col4">
+
+<img src="images/hardlines-diy-graphic2.jpg" alt="hardlines-diy-graphic2">
+</div>
+
+<div class="col4 last">
+
+<img src="images/hardlines-diy-graphic3.jpg" alt="hardlines-diy-graphic3">
+</div>
+
+</div>
+</div>
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+
+<h1 id="section6theme9">Diy (Lifestyle)</h1>
+<div class="col4">
+
+<img src="images/hardlines-diy-lifestyle1.jpg" alt="hardlines-diy-lifestyle1">
+</div>
+
+<div class="col4">
+
+<img src="images/hardlines-diy-lifestyle3.jpg" alt="hardlines-diy-lifestyle3">
+</div>
+<div class="col4 last">
+
+<img src="images/hardlines-diy-lifestyle4.jpg" alt="hardlines-diy-lifestyle4">
+</div>
+
+</div>
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img2404">
+
+<h1 id="section6theme10">Personalization (Graphic)</h1>
+<div class="col3">
+
+<img src="images/hardlines-personalization-graphic1.jpg" alt="hardlines-personalization-graphic1">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-personalization-graphic2.jpg" alt="hardlines-personalization-graphic2">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-personalization-graphic3.jpg" alt="hardlines-personalization-graphic3">
+</div>
+<div class="col3 last">
+
+<img src="images/hardlines-personalization-graphic4.jpg" alt="hardlines-personalization-graphic4">
+</div>
+
+</div>
+<div class="onerow img2404">
+<br/></br/>
+<div class="col12">
+
+<img src="images/hardlines-beauty-lifestyle5.jpg" alt="hardlines-beauty-lifestyle1">
+</div>
+</div>
+
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img2404">
+
+<h1 id="section6theme11">Personalization (Lifestyle)</h1>
+<div class="col3">
+
+<img src="images/hardlines-personalization-lifestyle1.jpg" alt="hardlines-personalization-lifestyle1">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-personalization-lifestyle2.jpg" alt="hardlines-personalization-lifestyle2">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-personalization-lifestyle3.jpg" alt="hardlines-personalization-lifestyle3">
+</div>
+<div class="col3 last">
+<img src="images/hardlines-personalization-lifestyle4.jpg" alt="hardlines-personalization-lifestyle4">
+</div>
+</div>
+<div class="onerow img240">
+<br/></br></div>
+<div class="onerow img240">
+<div class="col4">
+
+<img src="images/hardlines-personalization-lifestyle5.jpg" alt="hardlines-personalization-lifestyle5">
+</div>
+<div class="col4">
+
+<img src="images/hardlines-personalization-lifestyle6.jpg" alt="hardlines-personalization-lifestyle6">
+</div>
+<div class="col4 last">
+<img src="images/hardlines-personalization-lifestyle7.jpg" alt="hardlines-personalization-lifestyle7">
+</div>
+
+</div>
+</div>
+
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img2404">
+
+<h1 id="section6theme12">Toys (Graphic)</h1>
+<div class="col3">
+
+<img src="images/hardlines-toys-graphic1.jpg" alt="hardlines-toys-graphic1">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-toys-graphic2.jpg" alt="hardlines-toys-graphic2">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-toys-graphic3.jpg" alt="hardlines-toys-graphic3">
+</div>
+<div class="col3 last">
+
+<img src="images/hardlines-toys-graphic4.jpg" alt="hardlines-toys-graphic4">
+</div>
+
+</div>
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img2404">
+
+<h1 id="section6theme13">Toys (lifestyle)</h1>
+<div class="col3">
+
+<img src="images/hardlines-toys-lifestyle1.jpg" alt="hardlines-toys-lifestyle1">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-toys-lifestyle2.jpg" alt="hardlines-toys-lifestyle2">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-toys-lifestyle3.jpg" alt="hardlines-toys-lifestyle3">
+</div>
+<div class="col3 last">
+
+<img src="images/hardlines-toys-lifestyle4.jpg" alt="hardlines-toys-lifestyle4">
+</div>
+
+</div>
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img240">
+
+<h1 id="section6theme14">Licensing (Graphic)</h1>
+<div class="col4">
+
+<img src="images/hardlines-license-graphic1.jpg" alt="hardlines-license-graphic1">
+</div>
+<div class="col4">
+
+<img src="images/hardlines-license-graphic2.jpg" alt="hardlines-license-graphic2">
+</div>
+<div class="col4 last">
+
+<img src="images/hardlines-license-graphic3.jpg" alt="hardlines-license-graphic3">
+</div>
+
+</div>
+</div>
+
+<div class="clearfix theme2 onepcssgrid heightcheck">
+<div class="onerow img2404">
+
+<h1 id="section6theme15">Licensing (lifestyle)</h1>
+<div class="col3">
+
+<img src="images/hardlines-license-lifestyle1.jpg" alt="hardlines-license-lifestyle1">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-license-lifestyle2.jpg" alt="hardlines-license-lifestyle2">
+</div>
+<div class="col3">
+
+<img src="images/hardlines-license-lifestyle3.jpg" alt="hardlines-license-lifestyle3">
+</div>
+<div class="col3 last">
+
+<img src="images/hardlines-license-lifestyle4.jpg" alt="hardlines-license-lifestyle4">
+</div>
+
+</div>
+
+<div class="onerow img2404">
+<br><br>
+<div class="col12">
+
+<img src="images/hardlines-license-lifestyle5.jpg" alt="hardlines-license-lifestyle5">
+</div>
+</div>
+
+</div>
+
+
+</section>
+
+<section id="section7" class="section6">
+<div class="clearfix womensec onepcssgrid">
+<div class="onerow navthem">
+<div class="col12"> <a href="#" class="womenslogo">TERMS <span class="roundlogohardlineblack"></span></a></div>
+
+
+</div>
+
+<div class="onerow terms about">
+<div class="col12">
+
+<div class="abouth">
+<h1>About</h1>
+
+<p>Below are terms that are frequently referred to within the Editorial studio.</p>
+</div>
+
+
+</div>
+<div class="onerow clearfix termscon">
+<div class="col4">
+	<h3>Angle: </h3>
+
+<p><strong>Overhead -</strong> Shooting directly over head of products to the the face or the top of them. </p>
+
+<p><strong>45 Degree - </strong>shooting into product from the side with the camera shooting from a 45 degree angle.  </p>
+
+<p><strong>Shoot Into or Eye level -</strong> Shooting product(s) as if you were holding it directly in front of your eye-line point of view.</p> 
+
+
+</div>
+<div class="col4">
+	
+<h3>Depth:</h3>
+
+<p><strong>Shallow Depth of Field -</strong> Focusing the camera on a single or group of items and the rest of the images blurred. </p>
+
+</div>
+<div class="col4 last">
+	
+<h3>Product Composition: </h3>
+
+<p><strong>Product Focus -</strong> Styling the image with only 1 or 2 products. </p>
+
+<p><strong>Vinette -</strong> Styling the image with 3 to 5 products. </p>
+
+
+</div>
+</div>
+
+
+	</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+</section>
+
+<div class="footer">
+
+
+<div class="onepcssgrid"> All Right Reserved.  </div>
+
+</div>
+
+<script src="jq.js"></script>
+<script src="jquery.waypoints.min.js"></script>
+
+<script>
+
+$(function() {
+
+var pull 		= $('#pull');
+
+menu 		= $('nav ul:first-child');
+
+menuHeight	= menu.height();
+
+$(pull).on('click', function(e) {
+
+e.preventDefault();
+
+menu.slideToggle();
+
+});
+
+$(window).resize(function(){
+
+var w = $(window).width();
+
+if(w > 800 && menu.is(':hidden')) {
+
+$('nav ul').removeAttr('style');
+
+}
+
+});
+
+});
+
+</script>
+
+
+
+<script>
+jQuery(document).ready(function(){
+
+
+var waypoint = new Waypoint({
+element: document.getElementById('section2'),
+handler: function(direction) {
+jQuery('.scrollside li').removeClass('active');
+jQuery('.scrollside li.colorsection2').addClass('active');
+
+}
+})
+
+var waypoint1 = new Waypoint({
+element: document.getElementById('section3'),
+handler: function(direction) {
+jQuery('.scrollside li').removeClass('active');
+jQuery('.scrollside li.colorsection4').addClass('active');
+}
+})
+
+var waypoint2 = new Waypoint({
+element: document.getElementById('section4'),
+handler: function(direction) {
+jQuery('.scrollside li').removeClass('active');
+jQuery('.scrollside li.colorsection3').addClass('active');
+}
+})
+
+var waypoint3 = new Waypoint({
+element: document.getElementById('section1'),
+handler: function(direction) {
+jQuery('.scrollside li').removeClass('active');
+}
+})
+var waypoint4 = new Waypoint({
+element: document.getElementById('nav'),
+handler: function(direction) {
+jQuery('.scrollside li').removeClass('active');
+}
+})
+
+
+var waypoint5 = new Waypoint({
+element: document.getElementById('section5'),
+handler: function(direction) {
+jQuery('.scrollside li').removeClass('active');
+jQuery('.scrollside li.colorsection5').addClass('active');
+}
+})
+
+var waypoint6 = new Waypoint({
+element: document.getElementById('section6'),
+handler: function(direction) {
+jQuery('.scrollside li').removeClass('active');
+jQuery('.scrollside li.colorsection6').addClass('active');
+}
+})
+var waypoint7 = new Waypoint({
+element: document.getElementById('section7'),
+handler: function(direction) {
+jQuery('.scrollside li').removeClass('active');
+jQuery('.scrollside li.colorsection7').addClass('active');
+}
+})
+
+
+jQuery(".scrolltodiv").click(function(e) {
+e.preventDefault();
+
+
+if(jQuery(this).attr('todiv') == "section2")
+{
+jQuery('body,html').animate({
+scrollTop: eval(jQuery('#' + $(this).attr('todiv')).offset().top - 40)
+}, 1000);
+
+}
+else
+{
+
+jQuery('body,html').animate({
+scrollTop: eval(jQuery('#' + $(this).attr('todiv')).offset().top)
+}, 1000);
+
+
+}
+});
+});
+
+</script>
+
+
+
+</body>
+</html>
